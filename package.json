@@ -1,0 +1,17 @@
+{
+  "name": "siberian-lights-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "Cold colors-oriented theme, optimized for prioritized code perception",
+  "keywords": [
+    "syntax",
+    "theme",
+    "siberian",
+    "lights"
+  ],
+  "repository": "https://github.com/kmx64/siberian-lights-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

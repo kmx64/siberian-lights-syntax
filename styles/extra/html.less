@@ -1,0 +1,151 @@
+//SHORTCUT
+@class-name: @glacier-darker;
+@class-string: @glacier;
+@id-name: @iceblue-light-darker;
+@id-string: @iceblue-light;
+@params-name: @violet-neon; //href, src, url...
+@params-string: @violet-neon-darker;
+
+.syntax--html {
+
+
+  .syntax--entity {
+    &.syntax--name {
+      &.syntax--tag {
+        color: @noble-blue;
+        &.syntax--inline {
+          color: @violet;
+          &.syntax--meta,
+          &.syntax--title,
+          &.syntax--link {
+            color: @desert-rose-bright;
+          }
+          &.syntax--noscript {
+            color: @orange;
+          }
+        }
+        &.syntax--structure {
+          color: @construction-yellow;
+        }
+        &.syntax--script {
+          color: @orange;
+        }
+      } //TAG END
+    } //NAME END
+    &.syntax--other {
+      &.syntax--attribute-name {
+        &.syntax--class {
+          color: @class-name !important;
+        }
+        &.syntax--id {
+          color: @id-name !important;
+        }
+      } //ATTRIBUTE-NAME END
+    } //OTHER END
+  } //ENTITY END
+
+
+  .syntax--punctuation {
+    &.syntax--definition {
+      &.syntax--tag {
+        color: @comment-color-neutral-green-blue-fade;
+        &.syntax--begin,
+        &.syntax--end {
+          color: @comment-color-neutral-green-blue-fade;
+        }
+      } //TAG END
+      &.syntax--string {
+        &.syntax--begin,
+        &.syntax--end {
+          color: @quotes !important;
+        }
+      }
+    } //DEFINITION END
+    &.syntax--separator {
+      &.syntax--key-value {
+        color: @equality !important;
+      }
+    } //SEPARATOR
+  } //PUNCTUATION END
+
+
+  .syntax--meta {
+    &.syntax--tag {
+      &.syntax--sgml {
+        color: @desert-rose;
+      }
+      &.syntax--script {
+        .syntax--attribute-with-value {
+          color: @orange-lighter;
+          .syntax--attribute-name {
+            color: inherit !important;
+          }
+          .syntax--string {
+            color: @orange-darker;
+          }
+        }
+      }
+      &.syntax--inline {
+        .syntax--attribute-name {
+          color: @params-name;
+        }
+        .syntax--string {
+          color: @params-string;
+        }
+      }
+      &.syntax--structure {
+        .syntax--attribute-with-value {
+          .syntax--attribute-name {
+            color: @params-name;
+          }
+          .syntax--string {
+            color: @params-string;
+          }
+        }
+      }
+    } //TAG END
+    &.syntax--attribute-with-value {
+      &.syntax--class {
+        .syntax--string {
+          color: @class-string;
+        }
+      }
+      &.syntax--id {
+        .syntax--string {
+          color: @id-string;
+        }
+      }
+    }
+  } //META END
+
+
+  .syntax--markup {
+    &.syntax--underline {
+      &.syntax--link {
+        &.syntax--http {
+          &.syntax--hyperlink {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  } //MARKUP END
+
+
+  .syntax--constant {
+    &.syntax--character {
+      &.syntax--entity {
+        color: @medicine-blue-darker-grey;
+        .syntax--begin {
+          color: @medicine-blue-darker !important;
+        }
+        .syntax--end,
+        .syntax--other {
+          color: inherit;
+        }
+      }
+    }
+  } //CONSTANT END
+
+
+} //HTML END

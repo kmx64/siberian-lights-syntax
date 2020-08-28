@@ -1,0 +1,83 @@
+.syntax--source.syntax--css {
+
+  .syntax--property-name { // highlight supported entities
+    color: @violet-neon-darker;
+    &.syntax--support {
+      color: @iceblue-light-darker !important;
+    }
+  }
+  .syntax--property-value {
+    color: @violet-neon;
+    &.syntax--support {
+      color: @iceblue-light !important;
+    }
+  }
+
+
+  .syntax--entity {
+    &.syntax--other {
+      &.syntax--attribute-name {
+        &.syntax--id {
+          color: @desert-rose-bright;
+        }
+        &.syntax--class {
+          color: @cmd-green;
+        }
+        &.syntax--pseudo-class {
+          color: @medicine-blue-darker;
+        }
+      } // ATTRIBUTE-NAME END
+    } // OTHER END
+    &.syntax--name {
+      &.syntax--tag {
+        color: @glacier;
+      } //TAG END
+    } //NAME END
+  } // ENTITY END
+
+
+  .syntax--constant {
+    color: @desert-rose;
+    &.syntax--support {
+      color: @lime-neon;
+    }
+    &.syntax--numeric {
+      color: @swamp-green;
+    }
+    &.syntax--other {
+      &.syntax--color {
+        color: @desert-rose-bright;
+      }
+    }
+  }
+
+
+  .syntax--bracket {
+    &.syntax--curly {
+      color: @noble-blue;
+    }
+  }
+
+
+// EXTRA
+
+  .syntax--string {
+    color: @glacier-darker;
+  }
+
+
+  .syntax--keyword {
+    color: @violet-neon-lighter;
+    &.syntax--other {
+      color: @lime-neon;
+      &.syntax--unit {
+        color: @swamp-green-darker;
+      }
+    }
+    &.syntax--control {
+      color: @violet-neon-darker;
+    }
+  }
+
+
+} // CSS END
