@@ -1,7 +1,7 @@
 {
   "name": "siberian-lights-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Cold colors-oriented theme, optimized for prioritized code perception",
   "keywords": [
     "syntax",
